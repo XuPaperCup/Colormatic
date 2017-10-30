@@ -1,0 +1,7 @@
+---
+#This where the user can set their chosen symbol as the color symbol.
+#It's as simple as changing the setting below.
+
+#Default: "&"
+Color Symbol: "&"
+...
