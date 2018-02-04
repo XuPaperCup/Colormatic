@@ -2,6 +2,6 @@ name: Colormatic
 main: Colormatic\Main
 load: STARTUP
 version: 1.0.0
-api: 3.0.0-ALPHA10
+api: 3.0.0-ALPHA11
 author: TheDeibo
 description: Adds a customisable color symbol to use instead of `§`. 
