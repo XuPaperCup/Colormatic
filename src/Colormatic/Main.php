@@ -23,11 +23,7 @@ class Main extends PluginBase implements Listener{
     
     public function onChat(PlayerChatEvent $ev){
         $message = $ev->getMessage();
-        $this->getServer()->broadcastMessage($this->getServer()->getLanguage()->translateString($ev->getFormat(), [
-        $ev->getPlayer()->getDisplayName(),
-        $this->translateColors($this->getMainConfig()->get("Color Symbol"), $message),
-        ]), $ev->getRecipients());
-        $ev->setCancelled(true);
+        $ev->setMessage($this->getServer()->getLanguage()->translateString($this->translateColors($this->getMainConfig()->get("Color Symbol"), $message)));
     }
     
     public function translateColors($symbol, $message) {
@@ -60,8 +56,4 @@ class Main extends PluginBase implements Listener{
     public function getMainConfig(){
         return $this->getMainConfig;
     }
-    
-    
-    
-    
 }
